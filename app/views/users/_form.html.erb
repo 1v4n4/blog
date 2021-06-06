@@ -9,6 +9,7 @@
     </div>
   <% end %>
 
+
 <%= form_with model: user do |form| %>
 
   <%= form.label :user, "Username:" %>
@@ -19,6 +20,9 @@
 
   <%= form.label :user, "Password:" %>
   <%= form.password_field :password %>
+
+  <%= form.label :user, "Password Confirm" %>
+    <%= form.password_field :password_confirmation %>
   
   <%= form.submit "Sign in"%>
   
